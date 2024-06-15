@@ -1,0 +1,31 @@
+.profile-container {
+    background-color: #2c3e50; /* Dark background color */
+    color: #ecf0f1; /* Light text color for contrast */
+    text-align: center;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-container img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-container a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .profile-container a:hover {
+    text-decoration: underline;
+  }

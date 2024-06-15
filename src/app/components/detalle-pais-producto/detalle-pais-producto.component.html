@@ -1,0 +1,11 @@
+@if(selectedProduct) 
+{
+    <div class="product-detail mt-4">
+        <h2>Detalles del Pais</h2>
+        <p>{{selectedProduct.pais}}</p>
+        <img [src]="selectedProduct.urlBandera" class="img-fluid rounded-start" alt="bandera" width="40" height="30">
+    </div>
+} @else 
+{
+    <!-- <h1>Sin Pais Seleccionado</h1> -->
+}

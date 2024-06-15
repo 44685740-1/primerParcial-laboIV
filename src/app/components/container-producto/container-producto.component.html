@@ -1,0 +1,12 @@
+<app-lista-productos #productList></app-lista-productos>
+
+<div class="d-flex justify-content-around">
+    <app-detalle-producto></app-detalle-producto>
+    <app-detalle-pais-producto></app-detalle-pais-producto>
+</div>
+
+<div class="d-flex justify-content-around">
+    <app-alta-productos (productoAgregado)="onProductAdded()" [selectedCountry]="selectedCountry"></app-alta-productos>
+    <app-listado-paises (countrySelected)="onCountrySelected($event)"></app-listado-paises>
+</div>
+

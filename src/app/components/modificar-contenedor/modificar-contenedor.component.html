@@ -1,0 +1,13 @@
+<div class="profile-container d-flex flex-column bd-highlight justify-content-center align-items-center">
+  <h3>Modificar</h3>
+  <label for="empresa">Empresa</label>
+  <input type="text" [(ngModel)]="empresa" id="empresaContenedor" name="empresa">
+
+  <label for="color">Color</label>
+  <input type="color" [(ngModel)]="color" id="colorContenedor" name="color">
+
+  <label for="capacidad">Capacidad</label>
+  <input type="number" [(ngModel)]="capacidad" id="capacidadContenedor" min="0" name="capacidad">
+
+  <button class="btn btn-dark mt-2" (click)="modificarContenedor()">Modificar</button>
+</div>

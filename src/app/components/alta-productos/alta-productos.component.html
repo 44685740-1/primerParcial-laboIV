@@ -1,0 +1,27 @@
+<div class="profile-container d-flex flex-column bd-highlight justify-content-center align-items-center">
+    <h2>Agregar</h2>
+    <label for="nombreProducto">Nombre</label>
+    <input type="text" #nombreProducto id="nombreProducto" name="nombreProducto">
+    <label for="descripcionProducto">Descripcion</label>
+    <input type="text" #descripcionProducto id="descripcionProducto" name="descripcionProducto">
+    <label for="precioProducto">Precio</label>
+    <input type="number" #precioProducto id="precioProducto" min="1" name="Precio">
+    <label for="stockProducto">Stock</label>
+    <input type="number" #stockProducto id="stockProducto" min="0" name="stock">
+    <label for="comestible">comestible</label>
+    <input type="checkbox" #comestible id="comestible" name="comestible" >
+    @if(selectedCountry) 
+    {
+        <div  class="mt-4">
+            <h4>Pais Seleccionado</h4>
+            <p>
+              <img [src]="selectedCountry.flags.png" class="img-fluid rounded-start" alt="{{ selectedCountry.name.common }}" width="60" height="45">
+              {{ selectedCountry.name.common }}
+            </p>
+          </div>
+    } @else 
+    {
+        <label>Seleccione un Pais</label>
+    }
+    <button (click)="agregarProducto(nombreProducto.value,descripcionProducto.value, precioProducto.value, stockProducto.value, comestible.checked)"  class="btn">Agregar</button>
+</div>  

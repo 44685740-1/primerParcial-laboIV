@@ -1,0 +1,9 @@
+@if(perfil)
+{
+<div class="profile-container d-flex flex-column bd-highlight justify-content-center align-items-center">
+    <h1>Hola, mi nombre es {{ perfil.name }}</h1>
+    <img [src]="perfil.avatar_url" alt="{{ perfil.name }}" width="400" height="400">
+    <p>{{ perfil.bio }}</p>
+    <a [href]="perfil.html_url" target="_blank">Ver perfil en GitHub</a>
+</div>
+}

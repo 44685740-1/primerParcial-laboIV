@@ -1,0 +1,22 @@
+<div class="contenedores-list">
+    <table>
+        <thead>
+            <tr>
+                <!-- <th>Id</th> -->
+                <th>Empresa</th>
+                <th>Color</th>
+                <th>Capacidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (contenedor of contenedores; track contenedores) {
+            <tr (dblclick)="onRowDoubleClick(contenedor)">
+                <!-- <td>{{ contenedor.id }}</td> -->
+                <td>{{ contenedor.empresa }}</td>
+                <td>{{ contenedor.color }}</td>
+                <td>{{ contenedor.capacidad }}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

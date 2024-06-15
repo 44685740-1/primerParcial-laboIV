@@ -1,0 +1,24 @@
+@if(userEmail != null)
+{
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Bienvenido, {{userEmail}}</h1>
+    <div class="d-flex justify-content-around">
+        <div class="card m-3" style="width: 20rem;">
+            <img src="assets\producto-icon.png" class="card-img-top" alt="Productos">
+            <div class="card-body">
+                <h5 class="card-title">Productos</h5>
+                <p class="card-text">Maneja tus Productos Aqui</p>
+                <button (click)=" OnBtnProductos()" class="btn btn-primary">Ir a Productos</button>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 20rem;">
+            <img src="assets\contenedor-icon.png" class="card-img-top" alt="Contenedores">
+            <div class="card-body">
+                <h5 class="card-title">Contenedores</h5>
+                <p class="card-text">Maneja tus Contenedores Aqui</p>
+                <button (click)=" OnBtnContenedores()" class="btn btn-primary">Ir a Contenedores</button>
+            </div>
+        </div>
+    </div>
+</div>
+}

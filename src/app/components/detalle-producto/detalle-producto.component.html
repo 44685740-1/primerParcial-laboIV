@@ -1,0 +1,14 @@
+@if(selectedProduct) 
+{
+    <div class="product-detail">
+        <h2>Detalles del Producto</h2>
+        <p><strong>Nombre:</strong> {{ selectedProduct.nombre }}</p>
+        <p><strong>Descripcion:</strong> {{ selectedProduct.descripcion }}</p>
+        <p><strong>Precio:</strong> {{ selectedProduct.precio }}</p>
+        <p><strong>Stock:</strong> {{ selectedProduct.stock }}</p>
+        <p><strong>Comestible:</strong> {{ selectedProduct.comestible ? 'Si' : 'No' }}</p>
+    </div>
+} @else 
+{
+    <!-- <h1>Sin Producto Seleccionado</h1> -->
+}

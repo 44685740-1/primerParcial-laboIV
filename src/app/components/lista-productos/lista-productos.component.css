@@ -1,0 +1,37 @@
+.product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f8f9fa; /* Light background color */
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure the rounded corners are respected */
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Light gray border for rows */
+  }
+  
+  thead {
+    background-color: #343a40; /* Dark header background */
+    color: #fff; /* White text color for header */
+  }
+  
+  tr:hover {
+    background-color: #7a766d; /* Light gray on row hover */
+  }
+  
+  th {
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text for headers */
+  }
+  

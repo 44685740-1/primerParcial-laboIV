@@ -1,0 +1,27 @@
+.product-detail {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Maximum width */
+    margin: 20px auto; /* Center align with some margin */
+    color: #333; /* Dark grey text color */
+}
+
+.product-detail h2 {
+    font-size: 24px; /* Larger font size for heading */
+    color: #444; /* Slightly darker grey for heading */
+    margin-bottom: 15px; /* Space below heading */
+    text-align: center; /* Center align the heading */
+}
+
+.product-detail p {
+    font-size: 16px; /* Standard font size for paragraph */
+    line-height: 1.5; /* Line height for readability */
+    margin: 10px 0; /* Space above and below each paragraph */
+}
+
+.product-detail strong {
+    color: #555; /* Slightly darker grey for strong text */
+}

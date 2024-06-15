@@ -1,0 +1,6 @@
+<app-lista-contenedores #contenedoresList (contenedorSeleccionado)="onContenedorSeleccionado($event)"></app-lista-contenedores>
+<div class="d-flex justify-content-around mt-4">
+    <app-alta-contenedor (contenedorAgregado)="onContainerAdded()" ></app-alta-contenedor>
+    <app-modificar-contenedor (contenedorModificado)="onContainerModificado()" [selectedContenedor]="selectedContenedor" ></app-modificar-contenedor>
+    <app-eliminar-contenedor (contenedorEliminado)="onContainerEliminado()" [selectedContenedor]="selectedContenedor"></app-eliminar-contenedor>
+</div>

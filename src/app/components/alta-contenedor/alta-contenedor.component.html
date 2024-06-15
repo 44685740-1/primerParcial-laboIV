@@ -1,0 +1,10 @@
+<div class="profile-container d-flex flex-column bd-highlight justify-content-center align-items-center">
+    <h3>Agregar</h3>
+    <label for="empresa">Empresa</label>
+    <input type="text" #empresa id="empresaContenedor" name="empresa">
+    <label for="color">Color</label>
+    <input type="color" #color id="colorContenedor"  name="Precio">
+    <label for="capacidad">Capacidad</label>
+    <input type="number" #capacidad id="capacidadContenedor" min="1" name="capacidad">
+    <button (click)="agregarContenedor(empresa.value,color.value,capacidad.value)" class="btn btn-dark mt-2">Agregar</button>
+</div>  

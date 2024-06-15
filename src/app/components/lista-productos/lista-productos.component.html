@@ -1,0 +1,26 @@
+<div class="product-list">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th>Comestible</th>
+                <th>Pais</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (producto of productos; track producto) {
+            <tr (dblclick)="onRowDoubleClick(producto)">
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.descripcion }}</td>
+                <td>{{ producto.precio }}</td>
+                <td>{{ producto.stock }}</td>
+                <td>{{ producto.comestible ? 'Si' : 'No' }}</td>
+                <td>{{ producto.pais}}</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

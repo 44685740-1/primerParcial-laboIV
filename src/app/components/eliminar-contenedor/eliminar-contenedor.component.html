@@ -1,0 +1,14 @@
+<div class="profile-container d-flex flex-column bd-highlight justify-content-center align-items-center">
+    <h3>Eliminar</h3>
+    <label for="empresa">Empresa</label>
+    <input type="text" [(ngModel)]="empresa" id="empresaContenedor" name="empresa" disabled>
+    
+    <label for="color">Color</label>
+    <input type="color" [(ngModel)]="color" id="colorContenedor" name="color" disabled>
+    
+    <label for="capacidad">Capacidad</label>
+    <input type="number" [(ngModel)]="capacidad" id="capacidadContenedor" min="0" name="capacidad" disabled>
+    
+    <button class="btn btn-danger mt-2" (click)="eliminarContenedor()">Eliminar</button>
+  </div>
+  
